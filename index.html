@@ -4,9 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Сервис Volkswagen в Новочеркасске</title>
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    
+    <header id="header">
+        <div id="header_block" class="center_container">
+            <a href="index.html">
+                <img src="./img/logo.png" id="logo" alt="Логотип VOLKSVAGEN"/> 
+            </a>
+
+            <div id="header_top_block">
+                <div>
+                    <h1>Сервис Volkswagen</h1>
+                    <p>ремонт VOLKSWAGEN в Новочеркасске</p>
+                </div>
+                <div>
+                    <img src="./img/label.png" alt="Автолюкс">
+                </div>
+                <div>
+                    <p class="font_size_32">+7 (988) 517-91-12</p>
+                    <p class="text_align_right">Запись на ТО или ремонт</p>
+                </div>
+            </div>
+
+            <div id="header_bot_block">
+                <nav id="header_navbar" class="font_size_19">
+                    <a href="#main_service_container">О сервисе</a>
+                    <a href="#main_tires_container">Летняя резина</a>
+                    <a href="#footer">Контакты</a>
+                </nav>
+                <img src="./img/social-net-icons-active.png" id="repost_buttons" alt="Поделиться">
+            </div>
+        </div>
+
+         <!-- Контейнер с блоками, которые содержат контент вкладок -->
+         <div id="header_content" class="text_color_black">
+            <div id="content_1">
+                <h3>Валерий Логинов</h3>
+                <p>Ваш персональный менеджер по марке <br>
+                VOLKSWAGEN. О ремонте автомобилей <br>
+                VOLKSWAGEN я знаю все!</p>
+                <p>Позвоните мне сейчас и я сделаю вам <br>
+                СКИДКУ 10% на все работы и материалы!</p>
+                <p class="font_size_33 font_weight_bold text_color_blue">+7 (988) 517-91-12</p>
+            </div>
+            <!-- <div id="content_2">
+                <h3>Заголовок</h3>
+            </div>
+            <div id="content_3">
+                    <h3>Заголовок</h3>
+            </div>
+            <div id="content_4">
+                    <h3>Заголовок</h3>
+            </div> -->
+        </div>
+
+        <!-- Контейнер с вкладками -->
+        <div id="header_menu" class="center_container">
+            <button href="#content_1" onclick="openBox('content_1'); return false">Персональный менеджер</button>
+            <button href="#content_2" onclick="openBox('content_2'); return false">Сервисное ТО вашего Volkswagen</button>
+            <button href="#content_3" onclick="openBox('content_3'); return false">Сервис Volkswagen</button>
+            <button href="#content_4" onclick="openBox('content_4'); return false">Запчасти Volkswagen</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="main_repair_container" class="parallax-window" data-parallax="scroll" data-image-src="./img/parallax_img_1.png">
+            <h2 class="text_color_white">Ремонт автомобилей VOLKSVAGEN в Новочеркасске</h2>
+            <ul id="repair_block" class="center_container">
+                <li>Квалифицированные специалисты, <br> прошедшие обучение по марке <br> VOLKSVAGEN</li>
+                <li>Оригинальные масла и жидкости, <br> а также качественные <br> неоригинальные</li>
+                <li>Всегда в наличии шины, диски и <br>  расходные материалы для ТО <br> вашего VOLKSVAGEN</li>
+                <li>Оригинальные запчасти VOLKSVAGEN <br> и качественные аналоги проверенные <br> временем</li>
+            </ul>
+        </section>
+
+        <section id="main_service_container">
+            <h2 class="text_color_blue">Услуги по обслуживанию VOLKSWAGEN</h2>
+            <ul id="service_block" class="center_container">
+                <li>Регулярное техническое обслуживание</li>
+                <li></li>
+                <li></li>
+                <li class="text_align_right">Замена ремня ГРМ</li>
+                <li>Замена расходных материалов</li>
+                <li></li>
+                <li></li>
+                <li class="text_align_right">Замена колодок и дисков</li>
+                <li>Замена масел и тех. жидкостей</li>
+                <li></li>
+                <li></li>
+                <li class=" right">Заправка кондиционеров</li>
+                <li></li>
+                <li class="text_align_center">Ремонт ходовой</li>
+                <li class="text_align_center">Шиномонтаж</li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="main_tires_container" class="parallax-window" data-parallax="scroll" data-image-src="./img/parallax_img_2.png">
+            <h2 class="text_color_white">Лучшие летние шины для вашего VOLKSWAGEN только у нас</h2>
+            <div id="tires_block" class="center_container"> 
+                <dl id="tires_left_block" class="font_size_31">
+                    <dt>Volksvagen <br> Touareg</dt>
+                        <dd>235/65 R17</dd>
+                        <dd>255/60 R17</dd>
+                    
+                    <dt>Volksvagen Jetta</dt>
+                        <dd>195/65 R15</dd>
+                    
+                    <dt>Volksvagen Polo <br> sedan</dt>
+                        <dd>175/70 R17</dd>
+                </dl>
+                <div id="tires_right_block">
+                    <div id="cars_logo">
+                        <img src="./img/tuoareg_icon.png" alt="VW Tuoareg">
+                        <img src="./img/jetta_icon.png" alt="VW Jetta">
+                        <img src="./img/polo_icon.png" alt="VW Polo sedan">
+                    </div>
+                    <ul id="tires_brands">
+                        <li>Bridgestone</li>
+                        <li>BFGoodrich</li>
+                        <li>Tigar</li>
+                        <li>Nokian</li>
+                        <li>Nordman</li>
+                        <li>Michelin</li>
+                        <li>Yokohama</li>
+                        <li>Dunlop</li>
+                        <li>Continental</li>
+                        <li>Gislaved</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="main_info_container">
+            <div id="info_block" class="center_container">
+                <div id="info_left_part">
+                    <p class="font_size_23">На другие модели VOLKSWAGEN цены и наличие уточняйте у менеджера.</p>
+                    <p class="font_size_40 text_color_blue">+7 (988) 517-91-12</p>
+                </div>
+                <div id="info_right_part">
+                    <p class="font_size_17">В сервисном центре «Автолюкс» вы получите грамотную консультацию ма-<wbr>стеров, 
+                    прошедших профессиональное обучение. Вы сможете заказать ори-<wbr>гинальные запчасти 
+                    и расходные материалы для автомобиля VOLKSVAGEN, а так же качественные аналоги 
+                    мировых производителей. Доставка от 1 дня. <span>Ваш персональный менеджер всегда на 
+                    связи!</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="main_oil_container">
+            <h2 class="text_color_white">VOLKSVAGEN рекомендует тех.жидкости и масла CASTROL</h2>
+            <div id="oil_block" class="center_container">
+                <img src="./img/castrol_label.png" alt="Castrol label">
+                <img src="./img/hood_polo.png" alt="Picture of Volkswagen Polo hood">
+            </div>
+        </section>
+
+        <section id="main_map_container" class="center_container">
+            <div id="map_block">
+                <h2 class="text_color_blue">Сервис VOLKSVAGEN в Автолюкс: Баклановский 14</h2>
+            </div>
+                
+            <img src="./img/map.png" alt="Map">
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div id="footer_block" class="center_container">
+            <a href="#header"><img src="./img/label.png" class="label" alt="Автолюкс"></a>
+            <div>
+                <h2>Сервис VOLKSVAGEN в Автолюкс</h2>
+                <p>ремонт VOLKSVAGEN в Новочеркасске</p>
+            </div>
+            <div id="footer_info_block">
+                <img src="./img/social-net-icons-active.png" alt="Поделиться">
+                <p class="font_size_33">+7 (928) 182-15-77</p>
+                <P>ул. Баклановский, 14</p>
+                <p>Пн-пт: 8.00-20.00 | Сб-вс: 9.00-18.00</P>
+            </div>
+        </div>
+        
+        
+    </footer>
+
+    <!-- Подключаем main.js -->
+    <script src="./js/main.js"></script>
+
+    <!-- Подключаем библиотеку jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Подключаем плагин Parallax -->
+    <script src="./js/parallax.js-1.5.0/parallax.min.js"></script>
+
 </body>
 </html>

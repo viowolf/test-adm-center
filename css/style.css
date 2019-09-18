@@ -1,0 +1,423 @@
+/* Общие параметры */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    font-family: "Roboto Condensed", 'Arial Narrow', Arial;
+    font-size: 16px;
+}
+
+.center_container{
+    width: 1200px;
+}
+
+/* Параметры текстовых элементов (заголовки, абзацы ...) */
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Параметры блока header и его элементов */
+
+header{
+    height: 718px;
+    background-image: url(../img/header_bg_img.png), linear-gradient(#405d86, #ececec);
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center 202px, top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #ececec;
+}
+
+#header_block{
+    height: 300px;
+}
+
+#logo{
+    height: 225px;
+    width: 275px;
+    margin-top: -20px;
+    float: left;
+}
+
+#header_top_block{
+    height: 80px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header_bot_block{
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header_navbar{
+    height: 80px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header_content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#header_content div{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 90px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+#header_menu{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#header_menu button{
+    height: 70px;
+    padding: 0 33px 0 33px;
+    background-color: #525456;
+    cursor: pointer;
+    color: #ececec;
+    font-family: "Roboto Condensed", 'Arial Narrow', Arial;
+    font-size: 22px; 
+}
+
+/* Параметры блока main и его элементов */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* контейнер секции "ремонт" блока main */
+ #main_repair_container{
+    height: 452px;
+    width: 100vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #ececec;
+}
+
+#repair_block{
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+#repair_block li{
+    width: 80%;
+}
+
+    /* контейнер секции "сервис" блока main */
+#main_service_container{
+    height: 674px;
+    width: 100vw;
+    background-color: #ececec;
+    background-image: url(../img/tuoareg.png);
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#service_block{
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+    /* контейнер секции "шины" блока main */
+#main_tires_container{
+    height: 543px;
+    width: 100vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tires_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#tires_left_block{
+    height: 380px;
+    width: 50%;
+    padding: 5px 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#tires_left_block dt{
+    padding-top: 20px;
+}
+
+#tires_right_block{
+    width: 50%;
+    padding: 25px;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#cars_logo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#tires_brands{
+    width: 50%;
+    padding-left: 35px;
+    border-left: 2px solid #405d86;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 27px;
+    color: #405d86;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+dt{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+dd{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 27px;
+    color: #ececec;
+}
+
+ul{
+    list-style-type: none;
+}
+
+    /* контейнер секции "дополнительная информация" блока main */
+#main_info_container{
+    height: 225px;
+    width: 100vw;
+    background-color: #ececec;
+    display: flex;
+    font-size: 23px;
+}
+
+#info_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#info_left_part{
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+#info_right_part{
+    width: 50%;
+    padding: 25px;
+    text-align: justify;
+}
+
+#info_right_part span{
+    line-break: auto;
+    font-weight: bold;
+}
+
+    /* контейнер секции "масло" блока main */
+#main_oil_container{
+    height: 570px;
+    width: 100vw;
+    color: #ececec;
+    background-color: #8b8989;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#oil_block{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    /* контейнер секции "карта" блока main */
+#main_map_container{
+    height: 592px;
+    color: #405d86;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#map_block{
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+/* Параметры блока footer и его элементов */
+
+footer{
+    height: 182px;
+    background-color: #415f88;
+    display: flex;
+    justify-content: center;
+    color: #ececec;
+}
+
+    /* контейнеры блока footer */
+#footer_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_info_block{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/* Параметры классов */
+
+    /* семейство шрифтов */
+.font_tahoma{
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+    /* размер шрифта */
+.font_size_17{
+    font-size: 17px;
+}
+
+.font_size_19{
+    font-size: 19px;
+}
+
+.font_size_22{
+    font-size: 22px;
+}
+
+.font_size_23{
+    font-size: 23px;
+}
+
+.font_size_31{
+    font-size: 31px;
+}
+
+.font_size_32{
+    font-size: 32px;
+}
+
+.font_size_33{
+    font-size: 33px;
+}
+
+.font_size_40{
+    font-size: 40px;
+}
+
+    /* цвет текста */
+.text_color_white{
+    color: #ececec;
+}
+
+.text_color_blue{
+    color: #405d86;
+}
+
+.text_color_black{
+    color: black;
+}
+
+    /* стиль текста */
+.font_weight_bold{
+    font-weight: bold;
+}
+
+    /* расположение текста */
+.text_align_right{
+    text-align: right;
+}
+
+.text_align_center_{
+    text-align: center;
+}
+
+/* Формирование эффекта Parralax */
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
